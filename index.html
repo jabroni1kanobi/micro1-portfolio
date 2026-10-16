@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+<meta name="referrer" content="no-referrer">
+<meta name="googlebot" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>John Thomas Smith — Game Developer Portfolio (Micro1)</title>
+<style>
+:root{--bg:#070d16;--panel:#0d1626;--panel2:#111d33;--line:#1f3355;--cyan:#35d3f2;--cyan2:#7fe7ff;--txt:#dbe7f5;--dim:#8fa3bd;--gold:#ffcf6e;--green:#6ee7a8}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--txt);font:16px/1.6 -apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+header.hero{padding:56px 24px 36px;background:radial-gradient(1100px 380px at 20% -60px,#12325c 0%,transparent 60%),radial-gradient(900px 340px at 85% -40px,#0e4a63 0%,transparent 55%),var(--bg);border-bottom:1px solid var(--line)}
+.wrap{max-width:1120px;margin:0 auto}
+.kicker{letter-spacing:.35em;font-size:12px;color:var(--cyan)}
+h1{font-size:46px;line-height:1.05;margin:10px 0 4px}h1 .thin{font-weight:300;color:var(--cyan2)}
+.sub{color:var(--dim);max-width:820px}
+.cta{margin-top:18px;display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:11px 20px;border-radius:10px;background:var(--cyan);color:#04222c;font-weight:700;text-decoration:none}
+.btn.ghost{background:transparent;border:1px solid var(--cyan);color:var(--cyan2)}
+nav.bar{position:sticky;top:0;z-index:20;background:rgba(7,13,22,.94);border-bottom:1px solid var(--line);backdrop-filter:blur(6px)}
+nav.bar .wrap{display:flex;gap:4px;flex-wrap:wrap;padding:8px 24px}
+nav.bar a{color:var(--dim);text-decoration:none;font-size:13px;padding:7px 11px;border-radius:8px}
+nav.bar a:hover{color:#fff;background:var(--panel2)}
+section{padding:40px 24px;border-bottom:1px solid var(--line)}
+h2{font-size:30px;margin:0 0 4px}h2 .n{color:var(--cyan)}.lede{color:var(--dim);max-width:860px}
+.grid{display:grid;gap:16px}.g2{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.g3{grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.g4{grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px}
+.card h3{margin:0 0 8px;font-size:18px}.card p{margin:8px 0;color:var(--dim);font-size:14.5px}
+.card p b,.card li b{color:var(--txt)}ul.tight{margin:8px 0;padding-left:20px;color:var(--dim);font-size:14.5px}ul.tight li{margin:4px 0}
+video{width:100%;border-radius:10px;background:#000;display:block}img.shot{width:100%;border-radius:10px;display:block}
+.zoom{cursor:zoom-in;transition:outline .12s ease}
+.zoom:hover{outline:2px solid var(--cyan);outline-offset:2px}
+.cap{font-size:13px;color:var(--dim);margin-top:8px}.cap b{color:var(--cyan2)}
+.tag{display:inline-block;font-size:12px;border:1px solid var(--line);border-radius:20px;padding:2px 10px;color:var(--cyan2);margin:2px 4px 2px 0}
+.proof{font-size:13px;background:#081120;border:1px dashed var(--line);border-radius:10px;padding:10px 12px;margin-top:10px;color:var(--dim);word-break:break-all}
+.proof a{color:var(--cyan2)}
+.stats{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+.stat{background:rgba(13,22,38,.85);border:1px solid var(--line);border-radius:12px;padding:10px 16px;min-width:130px}
+.stat b{display:block;font-size:22px;color:var(--cyan2)}.stat span{font-size:12px;color:var(--dim)}
+.tablewrap{overflow-x:auto;margin:0 -4px;padding:0 4px}table.fit{min-width:620px}
+table.fit{width:100%;border-collapse:collapse;font-size:14px;margin-top:14px}
+table.fit th,table.fit td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+table.fit th{color:var(--cyan2);font-size:13px;letter-spacing:.04em}table.fit td a{color:var(--cyan2)}
+details{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:10px 0}
+details summary{cursor:pointer;font-weight:700}details summary span{color:var(--cyan)}
+footer{padding:36px 24px;color:var(--dim)}.gold{color:var(--gold)}
+.steps{counter-reset:s;list-style:none;padding:0;margin:14px 0 0}
+.steps li{counter-increment:s;position:relative;padding:0 0 14px 44px;color:var(--dim);font-size:14.5px}
+.steps li::before{content:counter(s);position:absolute;left:0;top:0;width:28px;height:28px;border-radius:8px;background:var(--panel2);border:1px solid var(--line);color:var(--cyan);font-weight:700;display:grid;place-items:center;font-size:14px}
+.steps li b{color:var(--txt)}
+.flow{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:14px 0 0;color:var(--cyan2);font-size:14px;font-weight:600}
+.flow span{background:var(--panel2);border:1px solid var(--line);border-radius:20px;padding:5px 12px}
+.flow i{color:var(--dim);font-style:normal}
+#lb{position:fixed;inset:0;background:rgba(3,7,14,.94);display:none;place-items:center;z-index:100;cursor:zoom-out;padding:18px}
+#lb.on{display:grid}
+#lb img{max-width:100%;max-height:100%;object-fit:contain;border-radius:10px;box-shadow:0 20px 70px rgba(0,0,0,.8)}
+#lb .x{position:absolute;top:14px;right:20px;color:#fff;font-size:30px;line-height:1;opacity:.85}
+#lb .h{position:absolute;bottom:16px;left:0;right:0;text-align:center;color:var(--cyan2);font-size:14px;padding:0 20px}
+@media(max-width:640px){h1{font-size:34px}}
+@media print{nav.bar,.cta,#lb{display:none}.zoom{cursor:default}video{display:none!important}html,body{background:#fff!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}section{break-inside:auto;padding-top:18px}h2,h3{break-after:avoid}.card,.shot,li{break-inside:avoid}.shot{max-height:150mm;object-fit:contain}}
+</style>
+</head>
+<body>
+
+<header class="hero"><div class="wrap">
+<div class="kicker">MICRO1 &middot; GAME DEVELOPER &middot; CONTRACTOR</div>
+<h1>John Thomas Smith <span class="thin">— gameplay systems, test design, engine fluency</span></h1>
+<p class="sub">Johnny Brookes / Lainthewired &middot; Johnnytdreamer@gmail.com. Competitive fighting-game player turned builder: Rushdown Revolt (<b>Light</b>), Brawlout (<b>LIGHT</b>), Multiversus tester and top competitor (<b>Lainthewired</b>). What follows is shipped work — a ranked Melee coach that talks through the Reaction Sheet, a 3D Chao Garden that grows from real work, a full Bloodborne PC port running live on YouGame with a Hardcore covenant economy on top, and the 3D pipeline that puts a character of mine into a retail fighter.</p>
+<div class="cta">
+<a class="btn" href="#coach">Watch the proof</a>
+<a class="btn ghost" href="#bloodborne">Bloodborne + YouGame</a>
+<a class="btn ghost" href="#pipeline">3D pipeline</a>
+<a class="btn ghost" href="#origin">Where it started</a>
+</div>
+<div class="stats" aria-label="Portfolio at a glance">
+<div class="stat"><b>5</b><span>shipped builds, live and running</span></div>
+<div class="stat"><b>26</b><span>fighters &times; 4 reactions on the sheet</span></div>
+<div class="stat"><b>832</b><span>quests in the Chao system</span></div>
+<div class="stat"><b>100</b><span>Hardcore titles + badges, 50 a side</span></div>
+<div class="stat"><b>100+</b><span>passing gates and tests, both ports</span></div>
+</div>
+</div></header>
+
+<nav class="bar"><div class="wrap">
+<a href="#coach">Melee Coach</a><a href="#chao">Chao Buddy</a><a href="#bloodborne">Bloodborne + YouGame</a><a href="#combat">Combat + Engine</a><a href="#writing">Design writing</a><a href="#philosophy">Philosophy</a><a href="#origin">Origin</a><a href="#pipeline">3D pipeline</a><a href="#review">Reviewer path</a>
+</div></nav>
+
+<div class="wrap">
+
+<section id="coach">
+<h2><span class="n">01 &middot;</span> Melee Coach — live ranked coaching, and the Reaction Sheet</h2>
+<p class="lede">A coach that runs off real match telemetry: replay in, a per-player stats sheet out, roughly forty evidence-backed habit triggers, a character bank plus personal baselines, then a twenty-second card in the intermission and a full recap after the set. It is <b>post-set only</b> — simulation, inputs, rollback, ELO and the queue are untouched, so competitive integrity is a design constraint, not a promise.</p>
+
+<div class="card" style="margin-bottom:16px"><h3>The build, working live</h3>
+<video controls preload="metadata" poster="assets/reaction-sheet.jpg" src="assets/COACH%20BUILD%20ACTUAL%20VIDEO.mp4"></video>
+<div class="cap"><b>COACH BUILD — ACTUAL FOOTAGE.</b> The coach running in the real build: telemetry in, a coaching card out, in real time, with the logic reading the match rather than guessing at it.</div></div>
+
+<div class="card" style="margin-bottom:16px"><h3>The Reaction Sheet — same game, more feelings</h3>
+<img class="shot zoom" loading="lazy" src="assets/reaction-sheet.jpg" alt="Reaction Sheet: 26 characters across happy, sad, angry and smug">
+<div class="cap"><b>REACTION SHEET v1.0</b> — 26 characters &times; 4 reactions, two animation frames each. The point is not the portraits: it is that the coach can speak in the fighter's own voice. A teardown is not an abstract statistic, it is the character looking at you. Every reaction is chosen by the trigger that fired, so the sheet <em>is</em> the coaching feedback made legible at a glance — click to zoom.</div></div>
+
+<div class="flow"><span>telemetry</span><i>&rarr;</i><span>stats sheet</span><i>&rarr;</i><span>~40 habit triggers</span><i>&rarr;</i><span>character bank + personal baselines</span><i>&rarr;</i><span>peer review</span><i>&rarr;</i><span>Reaction Sheet pick</span><i>&rarr;</i><span>20-second card + messenger</span></div>
+
+<div class="grid g2" style="margin-top:16px">
+<div class="card"><h3>How the reactions are picked</h3><ul class="tight"><li><b>Legibility:</b> a player reads a face, not a JSON payload</li><li><b>Voice:</b> the feedback belongs to the game, not to a dashboard</li><li><b>Coverage:</b> 104 reactions give the 40 triggers somewhere to land</li><li>Every trigger ships with <b>scripted fixtures and exact expected output</b></li></ul></div>
+<div class="card"><h3>The shipped card art</h3><img class="shot zoom" loading="lazy" src="assets/reaction-sheet-sketch.jpg" alt="Reaction Emote Sheet, in-game style"><div class="cap">The same sheet as it appears in the build, with the in-game "good games make better friends" footer. Two versions of the same decision: the readable sheet and the one that ships.</div></div>
+</div>
+<div class="proof">Coach engine, triggers and character bank: <b>ULTIMELEE-COACH-BUILD\source\port\runtime\hle\elo_coach.cpp</b> &middot; prompt contracts: <b>…\source\tools\melee-coach-companion\analysis.go</b>. Reaction-sheet source art: 180 portraits across 26 characters in <b>ui_sources\coach\</b>. Walkthrough on request.</div>
+</section>
+
+<section id="chao">
+<h2><span class="n">02 &middot;</span> Chao Buddy Garden — one creature, two loops, 832 quests</h2>
+<p class="lede">A persistent 3D garden running the <b>real Sonic Adventure 2 Chao runtime</b>, not a reimplementation. Two loops raise the same creature: the work you finish and the matches you play. Fighters you play push their own affinity into the creature; the kind of work you do pushes the rest. Eighty-two quests at the top level of that, or eight hundred and thirty-two if you count the tiers.</p>
+
+<div class="card" style="margin-bottom:16px"><h3>Actual footage</h3>
+<video controls preload="metadata" poster="assets/chao-garden.jpg" src="assets/CHAO%20BUDDY%20ACTUAL%20FOOTAGE.mp4"></video>
+<div class="cap"><b>CHAO BUDDY — ACTUAL FOOTAGE.</b> Point, interact, explore: pick a Chao up, carry it anywhere in real space, zoom the camera right in, place items on the ground for it to find, feed it and watch it react. The item and creature physics, the camera and the feeding are all running in the footage.</div></div>
+
+<div class="flow"><span>real work</span><i>+</i><span>real matches</span><i>&rarr;</i><span>one creature</span><i>&rarr;</i><span>stats, quests, evolution</span><i>&rarr;</i><span>new gardens</span></div>
+
+<div class="grid g3" style="margin-top:16px">
+<div class="card"><h3>Garden key art</h3><img class="shot zoom" loading="lazy" src="assets/chao-garden.jpg" alt="Chao Garden key art"><div class="cap">Lagoon, waterfalls, temple ruin, egg dispenser.</div></div>
+<div class="card"><h3>Yoshi-Chao turnaround</h3><img class="shot zoom" loading="lazy" src="assets/yoshi-chao.jpg" alt="Yoshi Chao turnaround"><div class="cap">Stamina and Run theming — the silhouette carries the stat it boosts.</div></div>
+<div class="card"><h3>Pikachu-Chao turnaround</h3><img class="shot zoom" loading="lazy" src="assets/pikachao.png" alt="Pikachu Chao turnaround"><div class="cap">Run and Fly Hero theming — Pikachu's affinity split made visual.</div></div>
+</div>
+
+<div class="grid g2" style="margin-top:16px">
+<div class="card"><h3>Progression at scale</h3><ul class="tight"><li><b>832 quests</b> across 26 fighters, 24 visible plus 8 hidden each, in game / set / career scopes, tiered T0&ndash;T6</li><li>60 achievements, mastery XP, alignment, happiness, evolution</li><li>Anti-cheese by construction: a verified no-projectile set needs inputs, duration and a replay-hash dedupe</li></ul></div>
+<div class="card"><h3>An economy that resists itself</h3><ul class="tight"><li>Simulated to <b>~444 rings/day</b> of normal play; spam earns under 3% of that</li><li>Deduplicated match rewards and a fail-closed ledger</li><li>Honest capability audit: 350 supported, 290 waiting on host data, <b>172 left gated rather than faked</b></li></ul></div>
+</div>
+<div class="proof">Project root: <b>Downloads\MELEE\J-LAY\JDEX-CHAO-WORKBUDDY</b> — README, final report, reward engine, quest data, and the native bridge that drives the original SA2 Chao physics, AI, evolution and saves.</div>
+
+<div class="card" style="margin-top:22px"><h3>The design plan, every slide — J-Dex WorkBuddy Garden</h3>
+<p class="lede">This is the document I wrote before the build existed: ten slides that take a reward engine from a desktop productivity app into a 3D game world, and then close the loop between the two. Click any slide to zoom.</p>
+<div class="grid g2">
+<div class="card"><h3>01 &middot; WorkBuddy Garden</h3><img class="shot zoom" loading="lazy" src="assets/plan-01-workbuddy-garden.jpg" alt="Slide 01 WorkBuddy Garden"><div class="cap">A tiny Chao Garden companion built into J-Dex. Native popup window, no visible avatar, mouse-native interaction, full 3D camera control, and a garden that lives from any angle.</div></div>
+<div class="card"><h3>02 &middot; Mouse-native controls</h3><img class="shot zoom" loading="lazy" src="assets/plan-02-mouse-native-controls.jpg" alt="Slide 02 Mouse-Native Controls"><div class="cap">No visible avatar: just the cursor, the camera and the garden. Point, interact, pick up, flick, release, and scroll or use dedicated buttons to zoom in and out.</div></div>
+<div class="card"><h3>03 &middot; Garden HUD and daily care</h3><img class="shot zoom" loading="lazy" src="assets/plan-03-garden-hud-daily-care.jpg" alt="Slide 03 Garden HUD and Daily Care"><div class="cap">Pet the Chao, pick them up, feed them, place items. Live rings, happiness, streak, energy, mood and adventure state, and a garden that grows with you.</div></div>
+<div class="card"><h3>04 &middot; Rewards from real work</h3><img class="shot zoom" loading="lazy" src="assets/plan-04-rewards-from-real-work.jpg" alt="Slide 04 Rewards From Real Work"><div class="cap">Coding progress becomes rings, gifts and slow-burn Chao growth. Implement user authentication, streak days, refer-a-friend, memory leak or renderer bugs, and the reward is tied to the thing you actually finished. Plus low-effort spam gates.</div></div>
+<div class="card"><h3>05 &middot; Shop and inventory economy</h3><img class="shot zoom" loading="lazy" src="assets/plan-05-shop-inventory-economy.jpg" alt="Slide 05 Shop and Inventory Economy"><div class="cap">Everything priced in rings, every purchase inside the game where progress is visible. A ring economy with real sinks, an expensive rare tier, and a deliberately limited quick-sale-buy path.</div></div>
+<div class="card"><h3>06 &middot; Contests and long-term progression</h3><img class="shot zoom" loading="lazy" src="assets/plan-06-contests-progression.jpg" alt="Slide 06 Contests and Long-Term Progression"><div class="cap">Raise a Chao over days of real work, then prove it in contests. Care for Chao, build strength, technique and focus, then earn trophies, titles, unique accessories and new garden areas.</div></div>
+<div class="card"><h3>07 &middot; Hero Garden unlock</h3><img class="shot zoom" loading="lazy" src="assets/plan-07-hero-garden-unlock.jpg" alt="Slide 07 Hero Garden Unlock"><div class="cap">The path of good after earning it: four milestones from Neutral Garden to Hero Garden, each with its own win condition, rewards and unique interactions.</div></div>
+<div class="card"><h3>08 &middot; Dark Garden unlock</h3><img class="shot zoom" loading="lazy" src="assets/plan-08-dark-garden-unlock.jpg" alt="Slide 08 Dark Garden Unlock"><div class="cap">The second alignment path, with its own long-term payoff. A darker Chao form, new mechanics and tricks, different experiences — and a richer potential pool behind a locked area.</div></div>
+<div class="card"><h3>09 &middot; J-Dex to Garden reward flow</h3><img class="shot zoom" loading="lazy" src="assets/plan-09-reward-flow.jpg" alt="Slide 09 Reward Flow"><div class="cap">The whole loop in four panels: prompt, work completed, reward granted, garden progress. This is the exact chain the shipped system runs.</div></div>
+<div class="card"><h3>10 &middot; The full WorkBuddy loop</h3><img class="shot zoom" loading="lazy" src="assets/plan-10-full-workbuddy-loop.jpg" alt="Slide 10 Full WorkBuddy Loop"><div class="cap">Six stages in one view — do real work, earn rings and progress, shop for items, raise the Chao, enter races and contests, unlock new gardens and karma forms. A more productive, brighter tomorrow.</div></div>
+</div>
+<div class="grid g2" style="margin-top:16px">
+<div class="card"><h3>Why it is written this way</h3><ul class="tight"><li><b>Observable, not implied.</b> Every reward names the task that caused it, so the player can always answer "why did I get that?"</li><li><b>Spam gates built into the loop</b>, not bolted on — low-effort prompts pay less by design.</li><li><b>Two alignment paths</b> so the long game has a choice, not just a longer list.</li><li><b>Visible growth.</b> Rings, trophies, accessories and new areas, all in the game where the work happened.</li></ul></div>
+<div class="card"><h3>And where it came from</h3><img class="shot zoom" loading="lazy" src="assets/jdex-quote-card.png" alt="J-Dex team quote card"><div class="cap">"A more playful, personal side of productive work." — the thesis the whole plan is built on, and the reason the same reward engine ended up inside a game.</div></div>
+</div>
+</div>
+</section>
+
+<section id="bloodborne">
+<h2><span class="n">03 &middot;</span> Bloodborne on YouGame — full port, live online, plus a Hardcore covenant economy</h2>
+<p class="lede">The open-source Bloodborne PC port (bbport, GPL-2.0) running inside YouGame's sandboxed desktop app, tested — including online — with the game logic untouched. Servers replaced, not the client: an in-process gateway answers the game's own shadNet, game-server and peer-to-peer sockets on loopback and routes everything to YouGame. Players bring their own legally obtained copy; no game data is ever shipped, hosted or linked.</p>
+
+<div class="card" style="margin-bottom:16px"><h3>Hardcore — private test trailer</h3>
+<video controls preload="metadata" poster="assets/poster-bloodborne.png" src="assets/Bloodborne%20Hardcore%20-%20private%20test%20trailer%20v1.mp4"></video>
+<div class="cap"><b>BLOODBORNE HARDCORE — PRIVATE TEST TRAILER v1.</b> The covenant economy, the drops, the board.</div></div>
+
+<div class="grid g2">
+<div class="card"><h3>The port</h3><ul class="tight"><li>~15-line loader plus configuration the port already reads; the store ships updates so the port's own updater stays off</li><li>Game code unmodified — <b>servers replaced, not the client</b></li><li>Manifest-verified player-owned dump: 551 of 28,844 files read at boot, <b>zero written</b></li><li>Error 487 diagnosed and fixed by measurement: reserve the window around where Windows placed it, cap allocations at 1&nbsp;TiB</li></ul></div>
+<div class="card"><h3>Online systems, live</h3><ul class="tight"><li>Accounts, identity, friends, <b>directed-summon invites</b> — bells still get rung, Bloodborne's rule survives</li><li>Matchmaking rooms, summon and invasion broker, <b>relay-or-direct peer-to-peer</b></li><li>Cloud saves landing about a second after the last write of a burst</li><li>Server Lite <b>community world</b>: notes, bloodstains, ghosts, glyphs, lamps, messenger</li><li>Optional <b>Seamless Co-op</b>: 55 of 55 byte patches, 159 hooks installed, the game continuing into the Hunter's Dream</li></ul></div>
+</div>
+
+<div class="card" style="margin-top:16px"><h3>Hardcore — the covenant economy I designed on top</h3>
+<p class="lede">A whole second game layered on the same world, so it crosses co-op, invasions and Seamless Co-op at once. You opt in and become a <b>hardcore hunter</b>: die and you lose your hunter and everything you are carrying, and the rest drops for the hunters around you to take. Everything below is designed and built, and it crosses systems rather than sitting in one menu.</p>
+<div class="grid g4" style="margin-top:12px">
+<div class="card"><h3>Two covenants</h3><p>Evil and Good, each with <b>50 titles</b>, a badge per title, and the quests that unlock them. Alignment is earned, not chosen, and rank inside your covenant is public.</p></div>
+<div class="card"><h3>Bounties &amp; escrow</h3><p>Stake items on another hunter. The stake is <b>escrowed</b> and stays hidden until the game's own receipts confirm what was actually lost — a bounty pays out on evidence, not on a claim.</p></div>
+<div class="card"><h3>Progression that costs something</h3><p>Kill credit, titles and badges all run through the same receipt path, so a win has to be real. Two hunters sharing a co-op room no longer credit each other with kills.</p></div>
+<div class="card"><h3>Loud, visible rewards</h3><p>Flashy profile icons, an aura that reads your standing at a glance, and a public leaderboard across all covenants — the reward is meant to be seen.</p></div>
+</div>
+<ul class="tight" style="margin-top:12px"><li><b>Board and leaderboard ship in-game</b>: bounties, leaderboard, titles and badges, relics, a live death log with causes, and your own state — opened from inside the game itself</li><li>Hardcore mode is a switch on the listing page; the game reads the choice at launch and keeps every other key in your account slot</li></ul>
+</div>
+
+<div class="grid g2" style="margin-top:16px">
+<div class="card"><h3>How it was tested</h3><ul class="tight"><li>Gates BG1, BG3, BG4, BG5, BG7, BG8 green; BG2 blocked honestly on memory (about 8&nbsp;GB per instance)</li><li><b>172 world-module tests</b>, gateway unit and end-to-end suites, hostile-input and fuzz guards</li><li>Scripted co-op scenarios S1&ndash;S10: sign-in, traditional and seamless co-op, invasion, password rooms, session end, messaging, stains and ghosts, chalice, directed invite</li><li>A private tester guide whose on-platform self-test ends in an explicit <b>WORLD CHECK PASS / FAIL</b></li></ul></div>
+<div class="card"><h3>What I proved does not fit</h3><p>Whole-game rollback measured at about 61.5&nbsp;ms of single-core CPU per 30&nbsp;fps frame across 103 host threads — <b>7.4&times; too slow</b> for the three frames a rollback needs. So co-op rides the game's own netcode with relay batching, packet priority and a direct path beside it. Measuring the no is part of the job.</p><p><a href="docs/send-to-yougame.md">Read the hand-off</a> &middot; <a href="docs/bloodborne-tester-guide.md">tester guide</a></p></div>
+</div>
+</section>
+
+<section id="combat">
+<h2><span class="n">04 &middot;</span> Combat and systems — engine fluency, and bugs found the hard way</h2>
+<p class="lede">A deterministic C#/Godot platform-fighter engine with fixed-point simulation, snapshot-and-hash rollback and peer-to-peer netcode, plus a one-command character pipeline that carries 27 fighters at 300+ actions each and reports <b>named gaps instead of inventing values</b>. Kazuya translated from a modern command fighter into Melee's older engine. Melee Unlocked: credited on the graphics fix that moved the Windows project from alpha to beta.</p>
+<div class="grid g2">
+<div class="card"><h3>J-LAY gameplay — the engine running</h3><video controls preload="metadata" poster="assets/john-shine-model.jpg" src="assets/jlay-gameplay.mp4"></video><div class="cap"><b>J-LAY GAMEPLAY</b> — the engine, in motion.</div></div>
+<div class="card"><h3>Kazuya — a command fighter inside Melee's engine</h3><video controls preload="metadata" src="assets/kazuya-laggy-preview.mp4"></video><div class="cap"><b>KAZUYA IN-GAME PREVIEW.</b> Animation conversion, packing and runtime validation, with per-motion residency budgets.</div></div>
+</div>
+<div class="card" style="margin-top:16px"><h3>Bugs I found by playing, not by reading</h3>
+<div class="tablewrap"><table class="fit">
+<tr><th>The report</th><th>What it actually was</th><th>How it closed</th></tr>
+<tr><td>DK cargo-throw: the victim snaps into the wrong pose mid-throw</td><td>Thrower-owned victim clips evaluated against the thrower's skeleton</td><td>Re-evaluate against the victim skeleton, merge the 9-clip cargo family into the victim table, add a regression test</td></tr>
+<tr><td>Shulk performs Marth's Shield Breaker and the game crashes</td><td>Inherited donor callbacks firing on the wrong fighter</td><td>Zero donor specials by default; an explicit source-bound emitter is required, with a refusal test</td></tr>
+<tr><td>An article pointer goes missing in long sessions</td><td>Ownership handed off without the reference travelling</td><td>Owner-tracked allocation, regression test on the failing path</td></tr>
+<tr><td>Melee freezes when the last peer leaves right as a match ends</td><td>The post-match disconnect never ran the in-match cleanup path</td><td>Rebuilt the game library so the match-over path completes deterministically instead of waiting on the peer</td></tr>
+</table></div>
+<div class="cap">Each one shipped as brief, root cause, reference solution, regression test. That is the shape I bring to an assignment.</div>
+</div>
+<div class="proof">Engine root: <b>Downloads\MELEE\J-LAY\New ML\PlatformFighter</b> — docs, simulation, tools, character ports, and per-fighter validation renders.</div>
+</section>
+
+<section id="writing">
+<h2><span class="n">05 &middot;</span> Design writing — specs people can build from</h2>
+<div class="grid g2">
+<div class="card"><h3>Multiversus battle-royale pitch</h3><p>Solos and duos across an exploration map with perks, PvE bosses and chests that lock players into real matches, a second-chance bracket, a closing zone with limited exits, and a final bracket where winners draft new perks between rounds. Built on the existing perk system and squad identity.</p><span class="tag">mode structure</span><span class="tag">PvPvE</span><span class="tag">brief</span><p><a href="docs/multiversus-br-pitch.txt">Read the full pitch</a></p></div>
+<div class="card"><h3>Shaggy rework</h3><p>An easy-to-learn, hard-to-master kit built on a long-form meter and four visually distinct, lore-accurate forms, with per-form move property changes, visual clarity on enhanced hits, and the approachable all-rounder core preserved. Includes what "correct" looks like on screen, per form.</p><span class="tag">kit design</span><span class="tag">readability</span><span class="tag">acceptance looks</span><p><a href="docs/shaggy-rework.txt">Read the full rework</a></p></div>
+</div>
+</section>
+
+<section id="philosophy">
+<h2><span class="n">06 &middot;</span> Design philosophy — a social layer for competitive games</h2>
+<p class="lede">Eight slides, click any one to zoom. The argument: competitive depth keeps a game worth mastering, but <b>belonging and recognition</b> keep people logging in. Casuals churn on win-or-nothing; they stay for identity, shared goals, visible creation and team play. Halo 2's clans and Halo 3's creation economy are the precedents, and a human editorial voice closes the loop. This is also the argument underneath the coach's Reaction Sheet and the Hardcore covenants: rewards have to be seen, and they have to be social.</p>
+<div class="card" style="margin:16px 0 0"><h3>The deck, all eight slides</h3><img class="shot zoom" loading="lazy" src="assets/nucleus-deck-overview.jpg" alt="Nucleus deck, all eight slides at a glance"><div class="cap"><b>THE WHOLE ARGUMENT ON ONE PAGE.</b> Community layer, the opportunity, core features, Halo 2, Halo 3, community culture, the human layer, and what it becomes. Click to zoom, then open any slide below for the full-resolution version.</div></div>
+<div class="grid g2" style="margin-top:16px">
+<div class="card"><h3>1 — Community layer</h3><img class="shot zoom" loading="lazy" src="assets/slide-1.jpg" alt="Nucleus community layer"><div class="cap">Voice, messaging, guilds, crew battles, spotlight.</div></div>
+<div class="card"><h3>2 — The opportunity</h3><img class="shot zoom" loading="lazy" src="assets/slide-2.jpg" alt="The opportunity"><div class="cap">Depth plus infrastructure plus recognition equals retention.</div></div>
+<div class="card"><h3>3 — Core features</h3><img class="shot zoom" loading="lazy" src="assets/slide-3.jpg" alt="Core features"><div class="cap">Queue &rarr; chat &rarr; match &rarr; clip &rarr; spotlight &rarr; guild.</div></div>
+<div class="card"><h3>4 — Halo 2's lesson</h3><img class="shot zoom" loading="lazy" src="assets/slide-4.jpg" alt="Halo 2 lesson"><div class="cap">Team identity increases retention.</div></div>
+<div class="card"><h3>5 — Halo 3's lesson</h3><img class="shot zoom" loading="lazy" src="assets/slide-5.jpg" alt="Halo 3 lesson"><div class="cap">Creation as a first-class feature.</div></div>
+<div class="card"><h3>6 — Community culture</h3><img class="shot zoom" loading="lazy" src="assets/slide-6.jpg" alt="Community culture"><div class="cap">Reward creativity, spectatorship and contribution — not only skill.</div></div>
+<div class="card"><h3>7 — The human layer</h3><img class="shot zoom" loading="lazy" src="assets/slide-7.jpg" alt="The human layer"><div class="cap">People remember the human voice, not just patch notes.</div></div>
+<div class="card"><h3>8 — What it becomes</h3><img class="shot zoom" loading="lazy" src="assets/slide-8.jpg" alt="What Nucleus can become"><div class="cap">A live community layer for competitive games.</div></div>
+</div>
+</section>
+
+<section id="origin">
+<h2><span class="n">07 &middot;</span> Where these systems came from</h2>
+<p class="lede">These are not three unrelated projects. They are one idea I have been carrying since I was a kid, built three times as the tools to build it got better.</p>
+<div class="steps">
+<li><b>The childhood version.</b> Before any of this was a job, the thing I wanted to play was a game where the game noticed you — where effort left a mark on the world and other people could see it. Not a scoreboard. A relationship.</li>
+<li><b>J-Dex: the first build.</b> When I started AI coding, I saw what tools like Codex were doing with companion features and it struck me as obvious that they had stopped one layer short. A coding app that <em>knows</em> you and pays you back for real work would be more fun and more rewarding than one that just answers. So I started with the coding layer, because that was the layer I actually had.</li>
+<li><b>The problem with stopping there.</b> A reward loop bolted onto a productivity tool only reaches the people already in that tool. The moment I saw it work, the obvious conclusion was that none of this was specific to coding — it belonged to <em>any</em> game. So the next question was which game.</li>
+<li><b>Chao Buddy: the system moved into a game.</b> A creature that grows from real work and real matches, 832 quests, a shop, gardens you unlock by caring for something properly. The J-Dex reward engine was the prototype; the Chao runtime was the host. Rewards that are visible, slow, and earned in real space instead of a dropdown.</li>
+<li><b>Melee Coach: the same instinct, aimed at skill.</b> The Reaction Sheet is the same idea turned inward. Instead of a reward for doing work, a reaction that speaks the fighter's language back at you the moment you do something worth noticing. Legibility as care.</li>
+<li><b>Bloodborne Hardcore: the same idea, with stakes.</b> Covenants, titles, badges, bounties escrowed against real receipts — a social layer built so that what you carry and what you are worth are visible to other players. Alignment, rank, and a death that costs something.</li>
+<li><b>Why I build this way.</b> Every one of those systems answers the same design question: what does the game give back, when, and how does the player know they got it. Depth is cheap to add. Belonging is the part that has to be designed.</li>
+</div>
+</section>
+
+<section id="pipeline">
+<h2><span class="n">08 &middot;</span> The 3D pipeline — my likeness into a retail fighter</h2>
+<p class="lede">Not a screenshot of a finished thing. This is the order of operations, with the actual artefacts from each stage: reference likeness, blockout, retopology and materials, skeleton and skin weights, bind-pose validation against a reference mesh, UV and seam work, the optimisation budget, and the in-engine result. Every image below is click-to-zoom.</p>
+
+<div class="flow"><span>self reference</span><i>&rarr;</i><span>3D blockout</span><i>&rarr;</i><span>retopo + materials</span><i>&rarr;</i><span>skeleton</span><i>&rarr;</i><span>skin weights</span><i>&rarr;</i><span>bind-pose validation</span><i>&rarr;</i><span>UV / seams</span><i>&rarr;</i><span>budget</span><i>&rarr;</i><span>in engine</span></div>
+
+<div class="card" style="margin-top:16px;margin-bottom:16px"><h3>Stage 1 — the likeness, in 3D</h3>
+<div class="grid g2">
+<div class="card"><img class="shot zoom" loading="lazy" src="assets/likeness-model-render.jpg" alt="Finished likeness model render"><div class="cap"><b>FINISHED LIKENESS MODEL.</b> My own proportions taken into 3D, materials and costume in place, triangles and vertices on screen.</div></div>
+<div class="card"><img class="shot zoom" loading="lazy" src="assets/likeness-blockout-budget.jpg" alt="Early likeness blockout with live counts"><div class="cap"><b>EARLY BLOCKOUT, SAME PIPELINE.</b> The live triangle and vertex counts are visible from the first commit, not discovered at the end. The budget is the design.</div></div>
+</div>
+</div>
+
+<div class="card" style="margin-top:16px;margin-bottom:16px"><h3>Stage 2 — retopology, materials, and the detail that sells it</h3>
+<p class="lede">Retopology for silhouette and clean edge flow, then materials, then the small pieces that carry the read: the helmet trim, the fleur-de-lis, the gold. Two custom passes below are mine.</p>
+<div class="grid g2">
+<div class="card"><h3>Custom helmet, three-quarter</h3><img class="shot zoom" loading="lazy" src="assets/helmet-render-three-quarter.jpg" alt="Custom blue and gold helmet, three-quarter view"><div class="cap">Blue enamel with worn gold trim and a fleur-de-lis crest. The angle that proves the silhouette holds away from front-on.</div></div>
+<div class="card"><h3>Custom helmet, front</h3><img class="shot zoom" loading="lazy" src="assets/helmet-render-front.jpg" alt="Custom blue and gold helmet, front view"><div class="cap">Front pass. Seam placement, panel breakup, and the interior shell that nobody sees until the camera gets close.</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="card" style="margin-top:16px"><h3>How the work is actually presented</h3>
+<p class="lede">Three pages from the writeup that accompanied the asset, because a pipeline claim without a method is just a screenshot.</p>
+<div class="grid g3">
+<div class="card"><h3>From a photo to a playable character</h3><img class="shot zoom" loading="lazy" src="assets/pipeline-doc-1-photo-to-character.jpg" alt="Writeup page: From a photo to a playable character"><div class="cap">Canonical reference, semantic description, Blender prototype, target-specific polish, and integration &mdash; with the finished example and the target in every shot.</div></div>
+<div class="card"><h3>The model has to work in motion</h3><img class="shot zoom" loading="lazy" src="assets/pipeline-doc-2-model-in-motion.jpg" alt="Writeup page: The model has to work in motion"><div class="cap">Propped mesh, clothing, cloth and equipment made modular so deformation stays correct and the whole asset is reusable.</div></div>
+<div class="card"><h3>A workflow, not a one-off asset</h3><img class="shot zoom" loading="lazy" src="assets/pipeline-doc-3-workflow.png" alt="Writeup page: A workflow, not a one-off asset"><div class="cap">Reusable reference preparation, model cleanup, surface projection and target adaptation — the part that makes the next character cheaper than the first one.</div></div>
+</div>
+</div>
+
+<div class="card" style="margin-top:16px"><h3>Stage 3 — skeleton and skin weights</h3>
+<p class="lede">Blender, armature from the reference object, vertex groups assigned per bone, inverse matrices cleared, parented to bone, then converted to the engine's animation format with the SA Tools chain. Click any frame to read the step.</p>
+<div class="grid g4">
+<div class="card"><h3>Export the model</h3><img class="shot zoom" loading="lazy" src="assets/blender-01-export.jpg" alt="Blender export"><div class="cap">Export.</div></div>
+<div class="card"><h3>Fit the hat</h3><img class="shot zoom" loading="lazy" src="assets/blender-02-hatm-fit.jpg" alt="Hat fit"><div class="cap">Headwear fitted and seated before anything else is modelled, so the silhouette reads correctly.</div></div>
+<div class="card"><h3>Accessories</h3><img class="shot zoom" loading="lazy" src="assets/blender-03-accessory.png" alt="Accessory pass"><div class="cap">Accessory pass — small pieces that decide whether a render looks designed or borrowed.</div></div>
+<div class="card"><h3>Build the armature</h3><img class="shot zoom" loading="lazy" src="assets/blender-04-armature.png" alt="Armature from objects"><div class="cap">Armature from the reference objects.</div></div>
+<div class="card"><h3>Select for rigging</h3><img class="shot zoom" loading="lazy" src="assets/blender-05-select-rig.png" alt="Selecting for rigging"><div class="cap">Selection for rigging.</div></div>
+<div class="card"><h3>Vertex groups</h3><img class="shot zoom" loading="lazy" src="assets/blender-06-vertex-group.png" alt="Vertex group"><div class="cap">Vertex groups, one per bone.</div></div>
+<div class="card"><h3>Assign weights</h3><img class="shot zoom" loading="lazy" src="assets/blender-07-assign-weight.png" alt="Assign vertex weight"><div class="cap">Weight painting.</div></div>
+<div class="card"><h3>Clear inverse</h3><img class="shot zoom" loading="lazy" src="assets/blender-08-clear-inverse.png" alt="Clear inverse"><div class="cap">Inverse matrices cleared before the fit pass.</div></div>
+<div class="card"><h3>Parent to bone</h3><img class="shot zoom" loading="lazy" src="assets/blender-09-parent-bone.png" alt="Parent to bone"><div class="cap">Parented to bone.</div></div>
+<div class="card"><h3>Child of constraint</h3><img class="shot zoom" loading="lazy" src="assets/blender-10-child-of.png" alt="Child of constraint"><div class="cap">Child-of constraint before baking, so the bind can still be corrected without repainting.</div></div>
+<div class="card"><h3>Convert to engine anim</h3><img class="shot zoom" loading="lazy" src="assets/blender-11-sa-anim-convert.png" alt="SA Tools animation conversion"><div class="cap">Converted into the engine's animation format.</div></div>
+<div class="card"><h3>UV unwrap</h3><img class="shot zoom" loading="lazy" src="assets/blender-12-uv.png" alt="UV unwrap"><div class="cap">Unwrap stage in the editor, before the packing pass below.</div></div>
+</div>
+</div>
+
+<div class="card" style="margin-top:16px"><h3>Stage 4 — bind-pose and animation validation</h3>
+<p class="lede">A costume is only finished when it survives the fighter's own motions. These are reference mesh, rest pose and a driven pose laid over each other on three axes, plus the diagnostic base — this is how the thrower/victim and shield-bone bugs got caught before a match did.</p>
+<div class="grid g3">
+<div class="card"><h3>Reference pose</h3><img class="shot zoom" loading="lazy" src="assets/rig-ref-pose.png" alt="Reference pose"><div class="cap">Reference mesh in the bind pose.</div></div>
+<div class="card"><h3>Rest pose</h3><img class="shot zoom" loading="lazy" src="assets/rig-rest-pose.png" alt="Rest pose"><div class="cap">Rest pose after weighting.</div></div>
+<div class="card"><h3>Driven pose</h3><img class="shot zoom" loading="lazy" src="assets/rig-actual-pose.png" alt="Driven pose"><div class="cap">Driven pose, overlaid — collapse, tearing and float show here first.</div></div>
+<div class="card"><h3>Rest diagnostic</h3><img class="shot zoom" loading="lazy" src="assets/rig-diag-base.png" alt="Rest diagnostic"><div class="cap">Diagnostic base pass.</div></div>
+<div class="card"><h3>UV islands</h3><img class="shot zoom" loading="lazy" src="assets/uv-islands.jpg" alt="UV island sheet"><div class="cap">Full UV island sheet — packing density and seam placement as a measurable artefact.</div></div>
+</div>
+</div>
+</div>
+<p class="lede" style="margin-top:12px">Then the parts that are not visible but decide whether it survives a match: <b>per-motion residency budgets</b> so no single animation blows the frame, <b>interpolation</b> tuned per joint rather than globally, <b>rollback-safe state</b> so the animation state restores exactly on a netcode rollback, and a menu-to-match pass to prove the asset survives the whole path.</p>
+</section>
+
+<section id="review">
+<h2><span class="n">09 &middot;</span> Reviewer path — 15 minutes</h2>
+<ol class="tight" style="color:var(--dim)">
+<li>The <b>Reaction Sheet</b> (&sect;01) — click to zoom.</li>
+<li>The <b>coach build running live</b> (&sect;01).</li>
+<li>The <b>Chao Buddy footage</b> (&sect;02), then the <b>ten WorkBuddy Garden design slides</b> and the closing quote card (&sect;02).</li>
+<li>The <b>Bloodborne trailer</b> and the Hardcore covenant economy (&sect;03).</li>
+<li>The <b>3D pipeline</b>: the likeness, the custom helmet, and the three writeup pages (&sect;08).</li>
+<li>The <b>Nucleus deck</b> — all eight slides at a glance, then 2 and 5 (&sect;06), then the origin note (&sect;07).</li>
+<li>Any design doc in <b>docs/</b>.</li>
+</ol>
+<p style="margin-top:14px">Contact: Johnnytdreamer@gmail.com &middot; Johnny Brookes / Lainthewired</p>
+</section>
+</div>
+
+<footer><div class="wrap">Everything here loads from <b>assets/</b> and <b>docs/</b> in this folder — zip it and the proof travels with it. Publisher-side details on the Bloodborne integration stay confidential; what is shown is at the level the project's own tester documentation uses. Competitive placements as reported.</div></footer>
+
+<div id="lb" role="dialog" aria-modal="true" aria-label="Zoomed image"><span class="x">&times;</span><img alt=""><div class="h"></div></div>
+
+<script>
+(function(){
+  var lb=document.getElementById('lb'),lbi=lb.querySelector('img'),lbh=lb.querySelector('.h');
+  function open(src,cap){lbi.src=src;lbh.textContent=cap||'';lb.classList.add('on');}
+  function close(){lb.classList.remove('on');lbi.src='';}
+  document.querySelectorAll('img.zoom').forEach(function(im){
+    im.addEventListener('click',function(){var c=im.closest('.card');open(im.getAttribute('src'),c?(c.querySelector('.cap')||{}).textContent||'':'');});
+  });
+  lb.addEventListener('click',close);
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')close();});
+  document.querySelectorAll('video').forEach(function(v){var c=v.parentElement.querySelector('.cap');if(c&&!v.getAttribute('aria-label')){v.setAttribute('aria-label','Gameplay video: '+c.textContent.trim().slice(0,120))}});
+})();
+</script>
+</body>
+</html>

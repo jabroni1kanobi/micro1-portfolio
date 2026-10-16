@@ -1,0 +1,5 @@
+﻿User-agent: *
+Disallow: /
+
+# Link-only portfolio. Not for search indexing.
+
