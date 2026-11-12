@@ -86,7 +86,7 @@ footer{padding:36px 24px;color:var(--dim)}.gold{color:var(--gold)}
 </div></header>
 
 <nav class="bar"><div class="wrap">
-<a href="#coach">Melee Coach</a><a href="#chao">Chao Buddy</a><a href="#bloodborne">Bloodborne + YouGame</a><a href="#combat">Combat + Engine</a><a href="#writing">Design writing</a><a href="#philosophy">Philosophy</a><a href="#origin">Origin</a><a href="#pipeline">3D pipeline</a><a href="#review">Reviewer path</a>
+<a href="#coach">Melee Coach</a><a href="#chao">Chao Buddy</a><a href="#bloodborne">Bloodborne + YouGame</a><a href="#combat">Combat + Engine</a><a href="#writing">Design writing</a><a href="#philosophy">Philosophy</a><a href="#origin">Origin</a><a href="#pipeline">3D pipeline</a><a href="#ultimelee">Ultimelee</a><a href="#review">Reviewer path</a>
 </div></nav>
 
 <div class="wrap">
@@ -132,7 +132,7 @@ footer{padding:36px 24px;color:var(--dim)}.gold{color:var(--gold)}
 <div class="card"><h3>Progression at scale</h3><ul class="tight"><li><b>832 quests</b> across 26 fighters, 24 visible plus 8 hidden each, in game / set / career scopes, tiered T0&ndash;T6</li><li>60 achievements, mastery XP, alignment, happiness, evolution</li><li>Anti-cheese by construction: a verified no-projectile set needs inputs, duration and a replay-hash dedupe</li></ul></div>
 <div class="card"><h3>An economy that resists itself</h3><ul class="tight"><li>Simulated to <b>~444 rings/day</b> of normal play; spam earns under 3% of that</li><li>Deduplicated match rewards and a fail-closed ledger</li><li>Honest capability audit: 350 supported, 290 waiting on host data, <b>172 left gated rather than faked</b></li></ul></div>
 </div>
-<div class="proof">Project root: <b>Downloads\MELEE\J-LAY\JDEX-CHAO-WORKBUDDY</b> — README, final report, reward engine, quest data, and the native bridge that drives the original SA2 Chao physics, AI, evolution and saves.</div>
+<div class="proof">Project contents: README, final report, reward engine, quest data, and the native bridge that drives the original SA2 Chao physics, AI, evolution and saves.</div>
 
 <div class="card" style="margin-top:22px"><h3>The design plan, every slide — J-Dex WorkBuddy Garden</h3>
 <p class="lede">This is the document I wrote before the build existed: ten slides that take a reward engine from a desktop productivity app into a 3D game world, and then close the loop between the two. Click any slide to zoom.</p>
@@ -202,7 +202,7 @@ footer{padding:36px 24px;color:var(--dim)}.gold{color:var(--gold)}
 </table></div>
 <div class="cap">Each one shipped as brief, root cause, reference solution, regression test. That is the shape I bring to an assignment.</div>
 </div>
-<div class="proof">Engine root: <b>Downloads\MELEE\J-LAY\New ML\PlatformFighter</b> — docs, simulation, tools, character ports, and per-fighter validation renders.</div>
+<div class="proof">Engine contents: docs, simulation, tools, character ports, and per-fighter validation renders. Walkthrough on request.</div>
 </section>
 
 <section id="writing">
@@ -232,7 +232,7 @@ footer{padding:36px 24px;color:var(--dim)}.gold{color:var(--gold)}
 <section id="origin">
 <h2><span class="n">07 &middot;</span> Where these systems came from</h2>
 <p class="lede">These are not three unrelated projects. They are one idea I have been carrying since I was a kid, built three times as the tools to build it got better.</p>
-<div class="steps">
+<ol class="steps">
 <li><b>The childhood version.</b> Before any of this was a job, the thing I wanted to play was a game where the game noticed you — where effort left a mark on the world and other people could see it. Not a scoreboard. A relationship.</li>
 <li><b>J-Dex: the first build.</b> When I started AI coding, I saw what tools like Codex were doing with companion features and it struck me as obvious that they had stopped one layer short. A coding app that <em>knows</em> you and pays you back for real work would be more fun and more rewarding than one that just answers. So I started with the coding layer, because that was the layer I actually had.</li>
 <li><b>The problem with stopping there.</b> A reward loop bolted onto a productivity tool only reaches the people already in that tool. The moment I saw it work, the obvious conclusion was that none of this was specific to coding — it belonged to <em>any</em> game. So the next question was which game.</li>
@@ -240,7 +240,7 @@ footer{padding:36px 24px;color:var(--dim)}.gold{color:var(--gold)}
 <li><b>Melee Coach: the same instinct, aimed at skill.</b> The Reaction Sheet is the same idea turned inward. Instead of a reward for doing work, a reaction that speaks the fighter's language back at you the moment you do something worth noticing. Legibility as care.</li>
 <li><b>Bloodborne Hardcore: the same idea, with stakes.</b> Covenants, titles, badges, bounties escrowed against real receipts — a social layer built so that what you carry and what you are worth are visible to other players. Alignment, rank, and a death that costs something.</li>
 <li><b>Why I build this way.</b> Every one of those systems answers the same design question: what does the game give back, when, and how does the player know they got it. Depth is cheap to add. Belonging is the part that has to be designed.</li>
-</div>
+</ol>
 </section>
 
 <section id="pipeline">
@@ -309,8 +309,25 @@ footer{padding:36px 24px;color:var(--dim)}.gold{color:var(--gold)}
 <p class="lede" style="margin-top:12px">Then the parts that are not visible but decide whether it survives a match: <b>per-motion residency budgets</b> so no single animation blows the frame, <b>interpolation</b> tuned per joint rather than globally, <b>rollback-safe state</b> so the animation state restores exactly on a netcode rollback, and a menu-to-match pass to prove the asset survives the whole path.</p>
 </section>
 
+<section id="ultimelee">
+<h2><span class="n">09 &middot;</span> Ultimelee — an 89-fighter cast into a 2001 fighting-game engine</h2>
+<p class="lede">A fan engineering project and my largest to date: bringing the full 89-fighter cast of a modern platform fighter into a native PC port of a 2001 fighting-game engine whose source we can edit. Nothing is hand-ported fighter by fighter. A custom toolchain, the <b>Foundry</b>, captures what each move does in the source game and generates engine code from that data, then proves it in headless matches.</p>
+<div class="card" style="margin-top:16px"><h3>Where it honestly stands</h3><ul class="tight"><li><b>Working today:</b> all 89 fighters load and fight in headless CPU-vs-CPU matches.</li><li><b>Work in progress:</b> move-by-move parity with the source game &mdash; specials, articles (projectiles and held items) and effects. It is tracked per fighter and per part on a progress board, and a move only counts as done when a real headless match proves it frame by frame.</li><li><b>Not claimed:</b> this is not finished, and I do not report it as nearly finished. Entry gates (&ldquo;it loads&rdquo;) are not parity, and I stopped reporting them as if they were.</li></ul></div>
+<div class="grid g2" style="margin-top:16px">
+<div class="card"><h3>Capture pipeline</h3><ul class="tight"><li>Records what every move does in the source game: frame data, hitboxes, values, articles, effects and sounds, from game data first and from instrumented traces of the running game for numbers static files do not hold.</li><li>An oracle runner replays scenarios in the reference game with frozen inputs so a capture is made once and reused, not re-measured.</li></ul></div>
+<div class="card"><h3>Compiler from captured data to engine code</h3><ul class="tight"><li>One rule per move family, never per fighter: a detector, a parameterized emitter and a registry row, then a regeneration sweep over all 89 fighters.</li><li>Gaps are named and refused, never filled with guessed values; every fix also leaves a regression test.</li></ul></div>
+<div class="card"><h3>Animation and skeletons</h3><ul class="tight"><li>Skeleton conversion between the two games' rigs and animation conversion with interpolation, so motion keeps its timing in the older engine.</li></ul></div>
+<div class="card"><h3>Models and effects</h3><ul class="tight"><li>Model import and an effects pipeline that converts the source game's effect files into flipbook-style effects the old engine can play.</li></ul></div>
+<div class="card"><h3>Engine work: systems the old engine never had</h3><ul class="tight"><li>Articles and projectiles built as engine items, following one hand-built reference fighter as the pattern.</li><li>Fighters that transform or swap, such as paired characters, sharing one slot through the engine's own transform and partner code.</li></ul></div>
+<div class="card"><h3>Headless testing and gates</h3><ul class="tight"><li>Automated headless matches drive each move and compare it frame by frame against the capture.</li><li>Gates are themselves tested: a gate must show it can pass known-good work and fail injected errors before its verdicts are believed. Self-tests found false failures in my own early gates, which were then fixed as bugs rather than loosened.</li></ul></div>
+<div class="card"><h3>Netcode</h3><ul class="tight"><li>Rollback netcode is kept in sync as a standing requirement, checked as part of the definition of done rather than at the end.</li></ul></div>
+<div class="card"><h3>Orchestration</h3><ul class="tight"><li>A work queue with claims, a parts board that ranks the causes blocking progress, and guards that block the worst mistakes automatically, so several agents can work in parallel without overlapping.</li><li>Cheap tools and models take the mechanical work; the expensive ones direct.</li></ul></div>
+</div>
+<div class="proof">Fan engineering project. No game content is offered or distributed from this page. Walkthrough on request.</div>
+</section>
+
 <section id="review">
-<h2><span class="n">09 &middot;</span> Reviewer path — 15 minutes</h2>
+<h2><span class="n">10 &middot;</span> Reviewer path — 15 minutes</h2>
 <ol class="tight" style="color:var(--dim)">
 <li>The <b>Reaction Sheet</b> (&sect;01) — click to zoom.</li>
 <li>The <b>coach build running live</b> (&sect;01).</li>
@@ -318,6 +335,7 @@ footer{padding:36px 24px;color:var(--dim)}.gold{color:var(--gold)}
 <li>The <b>Bloodborne trailer</b> and the Hardcore covenant economy (&sect;03).</li>
 <li>The <b>3D pipeline</b>: the likeness, the custom helmet, and the three writeup pages (&sect;08).</li>
 <li>The <b>Nucleus deck</b> — all eight slides at a glance, then 2 and 5 (&sect;06), then the origin note (&sect;07).</li>
+<li>The <b>Ultimelee</b> section (&sect;09): what the toolchain is and, stated plainly, how far it has got.</li>
 <li>Any design doc in <b>docs/</b>.</li>
 </ol>
 <p style="margin-top:14px">Contact: Johnnytdreamer@gmail.com &middot; Johnny Brookes / Lainthewired</p>
